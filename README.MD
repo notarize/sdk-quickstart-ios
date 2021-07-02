@@ -4,11 +4,11 @@
 
 ## Setup
 
-This repository contains example code written in Swift and SwiftUI. In order to run the project, you need to have a client (API Key)[https://dev.notarize.com/docs/authentication] generated.
+This repository contains example code written in Swift and SwiftUI. In order to run the project, you need to have a full-access [API Key](https://dev.notarize.com/docs/authentication) generated.
 
-As the SDK is still in private alpha, you will also need to download the framework binary (via instructions provided to you) and add it to the project manually. Ensure that copy resources if needed is checked.
+As the SDK is still in private alpha, you will also need to download the framework binary (via instructions provided to you) and add it to the project manually. Ensure that "copy items if needed" is checked.
 
-Under the `Frameworks, Libraries, and Embedded Content` in the `General` tab of your target's settings, make sure to select the `Embed & Sign` for the NotarizeSigner framework:
+Under the `Frameworks, Libraries, and Embedded Content` in the `General` tab of your target's settings, select the `Embed & Sign` for the NotarizeSigner framework
 
 
 In addition to embedding the framework, an additional `Framework Search Paths` in the Target's  `Build Settings` is required for our framework to resolve its dependencies:
@@ -87,5 +87,3 @@ done
 popd
 
 ```
-
-## License
