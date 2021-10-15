@@ -5,7 +5,7 @@ struct NotarizeDocumentView: UIViewControllerRepresentable {
     let token: String
     let signingResultCallback: (NTRSigningResult) -> Void
     func makeUIViewController(context: Context) -> some UIViewController {
-        let controller = NotarizeSigner.buildSigning(token: token, callback: signingResultCallback)
+        let controller = NotarizeSignerSDK.buildSigning(token: token, callback: signingResultCallback)
         return controller
     }
     

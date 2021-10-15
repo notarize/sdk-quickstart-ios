@@ -1,21 +1,25 @@
 # Notarize iOS SDK Quick Start
 
-> NOTE: The Notarize iOS SDK is currently in closed alpha. If you are interested in using the SDK for your app please contact sales@notarize.com
+> NOTE: The Notarize iOS SDK is currently in closed beta. If you are interested in using the SDK for your app please contact sales@notarize.com
 
 ## Setup
 
 This repository contains example code written in Swift and SwiftUI. In order to run the project, you need to have a full-access [API Key](https://dev.notarize.com/docs/authentication) generated.
 
-As the SDK is still in private alpha, you will also need to download the framework binary (via instructions provided to you) and add it to the project manually. Ensure that "copy items if needed" is checked.
+The SDK is available via Swift Package Manager.
 
-Under the `Frameworks, Libraries, and Embedded Content` in the `General` tab of your target's settings, select the `Embed & Sign` for the NotarizeSigner framework
-
-
-In addition to embedding the framework, an additional `Framework Search Paths` in the Target's  `Build Settings` is required for our framework to resolve its dependencies:
+You can add the NotarizeSigner framework to your project by adding the following package:
 
 ```
-$(PROJECT_DIR)/PATH-TO-FRAMEWORK/NotarizeSigner.framework/Frameworks
+https://github.com/notarize/NotarizeSigner-SPM.git
 ```
+
+The NotarizeSigner framework utilizes a few third party dependencies which are required for the framework to compile and run. These dependencies can be added to your project by adding the following package:
+
+```
+https://github.com/notarize/notarize-deps-ios
+```
+When prompted, please add all libraries to the target hosting the NotarizeSigner framework
 
 ## Quickstart
 
@@ -79,11 +83,9 @@ Depending on your project settings, you may need to set `Validate Workspace` set
 
 When running on a physical device, you could potentially experience a crash due to code signing inconsistencies. To solve this issue, insure that that the project's `Build Phases` has a run script after the `Embed Frameworks` step that runs the following:
 ```
-pushd ${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/Frameworks/NotarizeSigner.framework/Frameworks
-for EACH in *.framework; do
-    echo "-- signing ${EACH}"
-    /usr/bin/codesign --force --deep --sign "${EXPANDED_CODE_SIGN_IDENTITY}" --entitlements "${TARGET_TEMP_DIR}/${PRODUCT_NAME}.app.xcent" --timestamp=none $EACH
+find "${CODESIGNING_FOLDER_PATH}" -name '*.framework' -print0 | while read -d $'\0' framework
+do
+    codesign --force --deep --sign "${EXPANDED_CODE_SIGN_IDENTITY}" --preserve-metadata=identifier,entitlements --timestamp=none "${framework}"
 done
-popd
 
 ```

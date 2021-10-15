@@ -3,13 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A90474DF267BA994006FE8F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90474DE267BA994006FE8F6 /* AppDelegate.swift */; };
-		A9D77E5C267E38DF002C3358 /* NotarizeSigner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D77E5A267E38D8002C3358 /* NotarizeSigner.framework */; };
-		A9D77E5D267E38DF002C3358 /* NotarizeSigner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9D77E5A267E38D8002C3358 /* NotarizeSigner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9BE8CB82718DF1300A67DDA /* NotarizeSigner in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CB72718DF1300A67DDA /* NotarizeSigner */; };
+		A9BE8CBB2718DF5D00A67DDA /* Segment in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CBA2718DF5D00A67DDA /* Segment */; };
+		A9BE8CBD2718DF5D00A67DDA /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CBC2718DF5D00A67DDA /* JWTDecode */; };
+		A9BE8CBF2718DF5D00A67DDA /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CBE2718DF5D00A67DDA /* Reachability */; };
+		A9BE8CC12718DF5D00A67DDA /* NotarizeCV in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CC02718DF5D00A67DDA /* NotarizeCV */; };
+		A9BE8CC32718DF5D00A67DDA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CC22718DF5D00A67DDA /* SnapKit */; };
+		A9BE8CC52718DF5D00A67DDA /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CC42718DF5D00A67DDA /* ApolloAPI */; };
+		A9BE8CC72718DF5D00A67DDA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CC62718DF5D00A67DDA /* RxSwift */; };
+		A9BE8CC92718DF5D00A67DDA /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CC82718DF5D00A67DDA /* Swinject */; };
+		A9BE8CCB2718DF5D00A67DDA /* ApolloUtils in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CCA2718DF5D00A67DDA /* ApolloUtils */; };
+		A9BE8CCD2718DF5D00A67DDA /* TwilioVideo in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CCC2718DF5D00A67DDA /* TwilioVideo */; };
+		A9BE8CCF2718DF5D00A67DDA /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CCE2718DF5D00A67DDA /* Starscream */; };
+		A9BE8CD12718DF5D00A67DDA /* PSPDFKit in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CD02718DF5D00A67DDA /* PSPDFKit */; };
+		A9BE8CD32718DF5D00A67DDA /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CD22718DF5D00A67DDA /* Apollo */; };
+		A9BE8CD52718DF5D00A67DDA /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CD42718DF5D00A67DDA /* Sentry */; };
+		A9BE8CD72718DF5D00A67DDA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A9BE8CD62718DF5D00A67DDA /* Kingfisher */; };
 		A9E4845A267A61A600DFB908 /* QiuckStartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E48459267A61A600DFB908 /* QiuckStartApp.swift */; };
 		A9E4845C267A61A600DFB908 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4845B267A61A600DFB908 /* ContentView.swift */; };
 		A9E4845E267A61A800DFB908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E4845D267A61A800DFB908 /* Assets.xcassets */; };
@@ -26,7 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A9D77E5D267E38DF002C3358 /* NotarizeSigner.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,7 +48,6 @@
 
 /* Begin PBXFileReference section */
 		A90474DE267BA994006FE8F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9D77E5A267E38D8002C3358 /* NotarizeSigner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NotarizeSigner.framework; sourceTree = "<group>"; };
 		A9E26557267CF0E900620FD0 /* sdk-quickstart-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "sdk-quickstart-ios.entitlements"; sourceTree = "<group>"; };
 		A9E48456267A61A600DFB908 /* sdk-quickstart-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sdk-quickstart-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E48459267A61A600DFB908 /* QiuckStartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiuckStartApp.swift; sourceTree = "<group>"; };
@@ -53,7 +65,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D77E5C267E38DF002C3358 /* NotarizeSigner.framework in Frameworks */,
+				A9BE8CD12718DF5D00A67DDA /* PSPDFKit in Frameworks */,
+				A9BE8CC12718DF5D00A67DDA /* NotarizeCV in Frameworks */,
+				A9BE8CCB2718DF5D00A67DDA /* ApolloUtils in Frameworks */,
+				A9BE8CBB2718DF5D00A67DDA /* Segment in Frameworks */,
+				A9BE8CD72718DF5D00A67DDA /* Kingfisher in Frameworks */,
+				A9BE8CCD2718DF5D00A67DDA /* TwilioVideo in Frameworks */,
+				A9BE8CD52718DF5D00A67DDA /* Sentry in Frameworks */,
+				A9BE8CD32718DF5D00A67DDA /* Apollo in Frameworks */,
+				A9BE8CBF2718DF5D00A67DDA /* Reachability in Frameworks */,
+				A9BE8CC32718DF5D00A67DDA /* SnapKit in Frameworks */,
+				A9BE8CB82718DF1300A67DDA /* NotarizeSigner in Frameworks */,
+				A9BE8CC92718DF5D00A67DDA /* Swinject in Frameworks */,
+				A9BE8CC52718DF5D00A67DDA /* ApolloAPI in Frameworks */,
+				A9BE8CC72718DF5D00A67DDA /* RxSwift in Frameworks */,
+				A9BE8CBD2718DF5D00A67DDA /* JWTDecode in Frameworks */,
+				A9BE8CCF2718DF5D00A67DDA /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +114,6 @@
 		A9E48458267A61A600DFB908 /* sdk-quickstart-ios */ = {
 			isa = PBXGroup;
 			children = (
-				A9D77E5A267E38D8002C3358 /* NotarizeSigner.framework */,
 				A9E26557267CF0E900620FD0 /* sdk-quickstart-ios.entitlements */,
 				A9E4846E267A835200DFB908 /* Resources */,
 				A9E4846A267A61E300DFB908 /* Networking */,
@@ -136,14 +162,32 @@
 				A9E48452267A61A600DFB908 /* Sources */,
 				A9E48453267A61A600DFB908 /* Frameworks */,
 				A9E48454267A61A600DFB908 /* Resources */,
+				A9BE8CD82719C58500A67DDA /* ShellScript */,
 				A90474DD267BA907006FE8F6 /* Embed Frameworks */,
-				A9E265E4267CF5BF00620FD0 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "sdk-quickstart-ios";
+			packageProductDependencies = (
+				A9BE8CB72718DF1300A67DDA /* NotarizeSigner */,
+				A9BE8CBA2718DF5D00A67DDA /* Segment */,
+				A9BE8CBC2718DF5D00A67DDA /* JWTDecode */,
+				A9BE8CBE2718DF5D00A67DDA /* Reachability */,
+				A9BE8CC02718DF5D00A67DDA /* NotarizeCV */,
+				A9BE8CC22718DF5D00A67DDA /* SnapKit */,
+				A9BE8CC42718DF5D00A67DDA /* ApolloAPI */,
+				A9BE8CC62718DF5D00A67DDA /* RxSwift */,
+				A9BE8CC82718DF5D00A67DDA /* Swinject */,
+				A9BE8CCA2718DF5D00A67DDA /* ApolloUtils */,
+				A9BE8CCC2718DF5D00A67DDA /* TwilioVideo */,
+				A9BE8CCE2718DF5D00A67DDA /* Starscream */,
+				A9BE8CD02718DF5D00A67DDA /* PSPDFKit */,
+				A9BE8CD22718DF5D00A67DDA /* Apollo */,
+				A9BE8CD42718DF5D00A67DDA /* Sentry */,
+				A9BE8CD62718DF5D00A67DDA /* Kingfisher */,
+			);
 			productName = "sdk-quickstart-ios";
 			productReference = A9E48456267A61A600DFB908 /* sdk-quickstart-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -171,6 +215,10 @@
 				Base,
 			);
 			mainGroup = A9E4844D267A61A600DFB908;
+			packageReferences = (
+				A9BE8CB62718DF1300A67DDA /* XCRemoteSwiftPackageReference "NotarizeSigner-SPM" */,
+				A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */,
+			);
 			productRefGroup = A9E48457267A61A600DFB908 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -194,7 +242,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A9E265E4267CF5BF00620FD0 /* ShellScript */ = {
+		A9BE8CD82719C58500A67DDA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,7 +257,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "pushd ${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/Frameworks/NotarizeSigner.framework/Frameworks\nfor EACH in *.framework; do\n    echo \"-- signing ${EACH}\"\n    /usr/bin/codesign --force --deep --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --entitlements \"${TARGET_TEMP_DIR}/${PRODUCT_NAME}.app.xcent\" --timestamp=none $EACH\ndone\npopd\n";
+			shellScript = "find \"${CODESIGNING_FOLDER_PATH}\" -name '*.framework' -print0 | while read -d $'\\0' framework\ndo\n    codesign --force --deep --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --preserve-metadata=identifier,entitlements --timestamp=none \"${framework}\"\ndone\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -364,7 +412,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/sdk-quickstart-ios",
-					"$(PROJECT_DIR)/sdk-quickstart-ios/NotarizeSigner.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "sdk-quickstart-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -394,7 +441,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/sdk-quickstart-ios",
-					"$(PROJECT_DIR)/sdk-quickstart-ios/NotarizeSigner.framework/Frameworks",
 				);
 				INFOPLIST_FILE = "sdk-quickstart-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -432,6 +478,108 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9BE8CB62718DF1300A67DDA /* XCRemoteSwiftPackageReference "NotarizeSigner-SPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/notarize/NotarizeSigner-SPM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+		A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/notarize/notarize-deps-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9BE8CB72718DF1300A67DDA /* NotarizeSigner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB62718DF1300A67DDA /* XCRemoteSwiftPackageReference "NotarizeSigner-SPM" */;
+			productName = NotarizeSigner;
+		};
+		A9BE8CBA2718DF5D00A67DDA /* Segment */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = Segment;
+		};
+		A9BE8CBC2718DF5D00A67DDA /* JWTDecode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = JWTDecode;
+		};
+		A9BE8CBE2718DF5D00A67DDA /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = Reachability;
+		};
+		A9BE8CC02718DF5D00A67DDA /* NotarizeCV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = NotarizeCV;
+		};
+		A9BE8CC22718DF5D00A67DDA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = SnapKit;
+		};
+		A9BE8CC42718DF5D00A67DDA /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = ApolloAPI;
+		};
+		A9BE8CC62718DF5D00A67DDA /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = RxSwift;
+		};
+		A9BE8CC82718DF5D00A67DDA /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = Swinject;
+		};
+		A9BE8CCA2718DF5D00A67DDA /* ApolloUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = ApolloUtils;
+		};
+		A9BE8CCC2718DF5D00A67DDA /* TwilioVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = TwilioVideo;
+		};
+		A9BE8CCE2718DF5D00A67DDA /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = Starscream;
+		};
+		A9BE8CD02718DF5D00A67DDA /* PSPDFKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = PSPDFKit;
+		};
+		A9BE8CD22718DF5D00A67DDA /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = Apollo;
+		};
+		A9BE8CD42718DF5D00A67DDA /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = Sentry;
+		};
+		A9BE8CD62718DF5D00A67DDA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9BE8CB92718DF5D00A67DDA /* XCRemoteSwiftPackageReference "notarize-deps-ios" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9E4844E267A61A600DFB908 /* Project object */;
 }
