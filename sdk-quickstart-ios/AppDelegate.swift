@@ -5,7 +5,7 @@ import NotarizeSigner
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         let configuration = NotarizeSignerConfiguration(environment: .development)
-        NotarizeSigner.configure(config: configuration)
+        NotarizeSignerSDK.configure(config: configuration)
         return true
     }
 }

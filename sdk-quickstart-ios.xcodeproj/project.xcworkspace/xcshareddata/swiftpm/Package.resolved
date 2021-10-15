@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "NotarizeDeps",
+        "repositoryURL": "https://github.com/notarize/notarize-deps-ios",
+        "state": {
+          "branch": null,
+          "revision": "49255b1a5318292eb6239c7c54ab7986bcfb3153",
+          "version": "0.5.3"
+        }
+      },
+      {
+        "package": "NotarizeSigner",
+        "repositoryURL": "https://github.com/notarize/NotarizeSigner-SPM.git",
+        "state": {
+          "branch": null,
+          "revision": "6fb305f2bfa2d63babb9772db853d380ea2bb249",
+          "version": "0.7.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
