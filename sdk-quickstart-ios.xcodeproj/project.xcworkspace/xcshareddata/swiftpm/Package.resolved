@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/notarize/notarize-deps-ios",
         "state": {
           "branch": null,
-          "revision": "49255b1a5318292eb6239c7c54ab7986bcfb3153",
-          "version": "0.5.3"
+          "revision": "4c9bd22f2b6700e517f1cfadc44169b253367d74",
+          "version": "0.8.0"
         }
       },
       {
@@ -15,7 +15,7 @@
         "repositoryURL": "https://github.com/notarize/NotarizeSigner-SPM.git",
         "state": {
           "branch": null,
-          "revision": "6fb305f2bfa2d63babb9772db853d380ea2bb249",
+          "revision": "079e4dfe676d124d7a1697ac64eb3ecbe2ce38b2",
           "version": "0.7.0"
         }
       }
