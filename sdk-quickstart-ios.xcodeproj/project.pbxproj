@@ -422,7 +422,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.simplenexus.mortgagecalc.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.notarize.sdk-quickstart-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -451,7 +451,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.simplenexus.mortgagecalc.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.notarize.sdk-quickstart-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
